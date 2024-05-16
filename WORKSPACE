@@ -34,8 +34,9 @@ load("@rules_python//python:repositories.bzl", "py_repositories")
 py_repositories()
 
 # Load @io_bazel_rules_kotlin
-load("@io_bazel_rules_kotlin//kotlin:kotlin.bzl", "kotlin_repositories", "kt_register_toolchains")
+load("@io_bazel_rules_kotlin//kotlin:repositories.bzl", "kotlin_repositories")
 kotlin_repositories()
+load("@io_bazel_rules_kotlin//kotlin:core.bzl", "kt_register_toolchains")
 kt_register_toolchains()
 
 load("@vaticle_bazel_distribution//maven:deps.bzl", "maven_artifacts_with_versions")

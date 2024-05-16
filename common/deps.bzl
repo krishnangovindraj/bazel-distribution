@@ -18,10 +18,8 @@ def rules_pkg():
 def rules_kotlin():
     http_archive(
         name = "io_bazel_rules_kotlin",
-        urls = ["https://github.com/vaticle/rules_kotlin/archive/c2519b00299cff9df22267e8359784e9948dba67.zip"],
-        type = "zip",
-        strip_prefix = "rules_kotlin-c2519b00299cff9df22267e8359784e9948dba67",
-        sha256 = "1455f2ec4bf7ea12d2c90b0dfd6402553c3bb6cbc0271023e2e01ccdefb4a49a",
+        sha256 = "5766f1e599acf551aa56f49dab9ab9108269b03c557496c54acaf41f98e2b8d6",
+        url = "https://github.com/bazelbuild/rules_kotlin/releases/download/v1.9.0/rules_kotlin-v1.9.0.tar.gz",
     )
 
 def rules_jvm_external():
