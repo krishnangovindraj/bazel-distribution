@@ -4,7 +4,7 @@
 
 
 module(
-    name = "typedb_bazel_distribution",
+    name = "tdb_dist",
     compatibility_level = 1,
     version = "0.0.0",
 )
