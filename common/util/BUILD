@@ -23,7 +23,7 @@ kt_jvm_library(
     name = "util",
     srcs = glob(["*.kt"]),
     deps = [
-        "@typedb_bazel_distribution//common"
+        "//common"
     ],
     visibility = ["//visibility:public"],
 )

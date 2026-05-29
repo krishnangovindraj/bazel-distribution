@@ -18,5 +18,5 @@ load("@rules_python//python:pip.bzl", "pip_parse")
 def typedb_bazel_distribution_docs_py():
     pip_parse(
         name = "typedb_bazel_distribution_docs_py",
-        requirements_lock = "@typedb_bazel_distribution//docs:python/requirements.txt",
+        requirements_lock = "//docs:python/requirements.txt",
     )
